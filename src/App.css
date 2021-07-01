@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+:root{
+  --sidebar-flex: 1.5 ;
+  --condiv-flex : 7 ;
+  --fontsize-p : 1.2rem ;
+  --fontsize-nav : 1.6rem ;
+  --typing-font : 3rem ;
+}
+
+*{
+  margin:0 ;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+
+}
+
+.App {
+  display: flex;  
+  width: 100vw ;
+  min-height: 100vh;
+}
+
+nav{
+  padding: 60px 30px 0px 30px; /* บน ขวา ล่าง ซ้าย*/
+  flex: var(--sidebar-flex) ;
+  background-color: #333;
+}
+nav ul{
+  text-align: center;
+  list-style: none;
+  font-size: var(--fontsize-nav);
+}
+nav ul li{
+  margin: 40px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+.condiv{
+  padding: 40px;
+  background-color: #f4f5f9;
+  flex: var(--condiv-flex);
+
+}
+.profilepic {
+  width: 34%;
+  height: 54%;
+  border-radius: 50%;
+  margin: 2.4rem;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social{
+  position: absolute;
+  display: flex;
+  margin-top: 20px;
+  bottom: 10px;
+}
+.social i {
+  color: #9a9b9c;
+  padding-right: 1rem;
+  font-size: 2.4rem;
+}
+.social i:hover{
+  color: #333;
+}
+
+.typingeffect{
+  font-size: var(--typing-font);
+}
+
+/* ส่วน About */
+.about{
+  text-align: center;
+}
+.subtopic{
+  margin: 10px 10px 30px 10px;
+}
+.aboutpic{
+  width: 24%;
+  height: 40%;
+  border-radius: 50%;
+  margin: 2.4rem;
+}
+.about h2{
+  margin-bottom: 14px;
+}
+.about p{
+  font-size: var(--fontsize-p);
+}
+
+/* ส่วน Education*/
+.widecard{
+
+  margin: 40px 14px;
+  /* border: solid black 2px ; */
+  padding: 0.5rem;
+  border-radius: 14px;
+  transition: 0.5s;
+}
+.widecard:hover{
+  color: #fff;
+  background-color: orange;
+  box-shadow: 2px 2px 4px black;
+}
+
+/* ส่วน Skills*/
+.skills ul{
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+}
+.skills ul li{
+  margin: 1.6rem;
+  list-style: none;
+}
